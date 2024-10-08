@@ -22,5 +22,10 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Run UI testson Project 1
+      run: dotnet test TestProject1/TestProject1.csproj --no-build --verbosity normal
+    - name: Run UI testson Project 2
+      run: dotnet test TestProject2/TestProject2.csproj --no-build --verbosity normal
+    - name: Run UI testson Project 3
+      run: dotnet test TestProject3/TestProject3.csproj --no-build --verbosity normal
+      
